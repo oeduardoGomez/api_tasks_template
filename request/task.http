@@ -1,0 +1,37 @@
+##
+
+GET http://localhost:3000/api/tasks
+
+### pagination
+
+GET http://localhost:3000/api/tasks?page=1&size=3
+###
+POST   http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title":"hacer AI",
+    "description":"AI",
+    "done": false
+}
+###
+
+GET http://localhost:3000/api/tasks/61d620a47e24f05199eb0a2
+
+###
+
+DELETE  http://localhost:3000/api/tasks/61d621ac114d7c4840deb218
+
+### done tasks
+
+GET http://localhost:3000/api/tasks/done
+
+
+### done tasks
+
+PUT  http://localhost:3000/api/tasks/61d620b67e24f05199eb0a28
+Content-Type: application/json     
+
+{
+    "title": "titulo cambiado"
+}
